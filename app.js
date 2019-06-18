@@ -3,7 +3,7 @@ const Header = (props) => {
   return (
     <header>
       <h1>{props.title}</h1>
-      <span className="stats">Players: {props.totalPlayers(5)}</span>
+      <span className="stats">Players: {props.totalPlayers}</span>
     </header>
   );
 }
@@ -33,7 +33,7 @@ const Counter = () => {
 const App = () => {
   return (
     <div className="scoreboard">
-      <Header title="Scoreboard" totalPlayers={n => n + 10} />
+      <Header title="Scoreboard" totalPlayers={1} />
       <Player />
     </div>
   )
